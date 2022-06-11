@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(hsl(249, 69%, 64%), hsl(227, 76%, 56%));
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.calculator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center;
+}
+
+#forms {
+  background-color: hsl(300, 7%, 3%);
+  width: 360px;
+  border-radius: 0.65em;
+  padding: 0 1em;
+}
+
+#display {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  width: 320px;
+  padding: 1.25em 0;
+  border-radius: 0.25em;
+  text-align: right;
+  padding-right: 0.75em;
+  font-size: 1.6rem;
+  outline: none;
+  font-weight: bold;
+  border: none;
+  background-color: hsl(22, 53%, 85%);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 1.5em;
+}
+
+.btn {
+  width: calc(25%);
+}
+
+.buttons input {
+  width: 60px;
+  height: 55px;
+  border: none;
+  margin: 6px 0;
+  font-size: 1.35rem;
+  background-color: hsl(318, 20%, 73%);
+  font-weight: 600;
+}
+
+.buttons input:hover {
+  background-color: hsl(318, 20%, 53%);
+}
+
+#equals {
+  width: 305px;
+  margin: 0.5125em 0.55em;
+  background-color: hsl(249, 79%, 60%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1.6rem;
+}
+
+#equals:hover,
+#clear:hover {
+  background-color: hsl(249, 79%, 70%);
+}
+
+#clear {
+  background-color: hsl(249, 79%, 60%);
+  color: hsl(0, 0%, 100%);
+}
+
+@media screen and (max-width: 600px) {
+  #forms {
+    width: 260px;
+    padding: 0 1em;
+  }
+
+  #display {
+    width: 220px;
+    font-size: 1.2rem;
+  }
+  
+  .buttons input {
+    width: 40px;
+    height: 35px;
+    font-size: 1rem;
+  }
+
+  #equals {
+    width: 205px;
+    margin: 0.5125em .75em;
+    font-size: 1rem;
+  }
+}
